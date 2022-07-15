@@ -25,6 +25,7 @@ pipeline {
     stage('Install Docker') {
       steps {
         sh 'ansible-playbook Ansible/dockerinstall.yaml'
+      }
     }
     stage('Deploy container') {
       steps {
